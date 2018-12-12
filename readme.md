@@ -1,4 +1,4 @@
-algorithm for javascript
+javascript algorithm 
 
 - data-structures [数据结构]
   - [x] simple-linked-list [简单的单向链表]
