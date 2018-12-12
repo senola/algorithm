@@ -3,7 +3,7 @@
  * @description 简单的链表
  */
 
-'use strict'
+'use strict';
 
 /**
  * 定义节点结构（链表由一组节点组成）
@@ -35,7 +35,7 @@ class SimpleLinkedList {
         const newNode = new SimpleLinkedListNode(value);
 
         // 头节点为空，则创建一个新的头节点，并且头、尾节点指针都指向新节点
-        if(!this.head) {
+        if (!this.head) {
             this.head = newNode;
             this.tail = newNode;
 
@@ -48,6 +48,7 @@ class SimpleLinkedList {
 
         return this;
     }
+
     /**
      * 头部添加节点
      * @return SimpleLinkedList
@@ -57,21 +58,22 @@ class SimpleLinkedList {
 
         this.head = newHead;
         // 尾部节点不存在则头尾统一指向newHead
-        if(!this.tail) {
+        if (!this.tail) {
             this.tail = newHead;
         }
         return this;
     }
+
     /**
      * 移除节点(相同节点全部移除)
      * @return SimpleLinkedList
      */
     remove(value) {
         // 如果头节点及判断的类型不一致返回null
-        if(!this.head) {
+        if (!this.head) {
             return null;
         }
-        
+
         let deletedNode = null;
 
         while (this.head && this.head.value === value) {
@@ -106,14 +108,12 @@ class SimpleLinkedList {
      * @return SimpleLinkedList
      */
     find(value) {
-        if(!this.head) {
-            return null;
-        }
+        if (!this.head) return null;
 
         let curentNode = this.head;
 
-        while(curentNode) {
-            if(value && curentNode.value === value) {
+        while (curentNode) {
+            if (value && curentNode.value === value) {
                 return curentNode;
             }
             curentNode = curentNode.next;
@@ -127,13 +127,10 @@ class SimpleLinkedList {
      */
     deleteHead() {
         // 没有头节点情况
-        if(!this.head) {
-            return null;
-        }
-
+        if (!this.head) return null;
         const deleteNode = this.head;
 
-        if(!this.head.next) { // 只有一个节点情况
+        if (!this.head.next) { // 只有一个节点情况
             this.head = null;
             this.tail = null;
         } else { // 多个节点情况
@@ -148,10 +145,8 @@ class SimpleLinkedList {
      */
     deleteTail() {
         // 没有尾节点情况
-        if(!this.head) {
-            return null;
-        }
-        
+        if (!this.head) return null;
+
         const deleteNode = this.tail;
 
         if (!this.head.next) { // 只有一个节点情况
@@ -160,13 +155,13 @@ class SimpleLinkedList {
         } else { // 多个节点情况
             // 找到倒数第二个节点
             let currentNode = this.head;
-            
-            while(currentNode) {
+
+            while (currentNode) {
                 // 找出第二个节点
                 if (currentNode.next === this.tail) {
                     currentNode.next = null;
                     this.tail = currentNode; // 将指针指向新的尾节点
-                } 
+                }
                 currentNode = currentNode.next;
             }
         }
@@ -180,8 +175,8 @@ class SimpleLinkedList {
         const nodes = [];
 
         let currentNode = this.head;
-        
-        while(currentNode) {
+
+        while (currentNode) {
             nodes.push(currentNode.value);
             currentNode = currentNode.next;
         }
