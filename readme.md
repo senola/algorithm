@@ -2,7 +2,7 @@ javascript algorithm
 
 - data-structures [数据结构]
   - [x] simple-linked-list [简单的单向链表]
-  - [ ] doubly-linked-list [双向循环链表]
+  - [ ] doubly-linked-list [双向链表]
 
 
 单元测试：
