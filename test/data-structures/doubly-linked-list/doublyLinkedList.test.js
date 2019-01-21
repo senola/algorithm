@@ -64,3 +64,46 @@ test('03、双向链表头部添加节点', ()=> {
     expect(doublyLinkedList.tail.next).toEqual(null);
     expect(doublyLinkedList.tail.prev.value).toEqual('2');
 });
+
+test('04、移除节点（remove）', ()=> {
+    const doublyLinkedList = new DoublyLinkedList();
+
+    const removedItme = {
+        a: 1
+    };
+
+    expect(doublyLinkedList.remove(removedItme)).toEqual(null);
+    expect(doublyLinkedList.remove('1')).toEqual(null);
+
+    doublyLinkedList.append('1');
+    doublyLinkedList.append(removedItme);
+
+    expect(doublyLinkedList.remove('1').value).toEqual('1');
+    expect(doublyLinkedList.head.value).toEqual(removedItme);
+    expect(doublyLinkedList.head.next).toEqual(null);
+    expect(doublyLinkedList.head.prev).toEqual(null);
+    expect(doublyLinkedList.tail.value).toEqual(removedItme);
+    expect(doublyLinkedList.tail.next).toEqual(null);
+    expect(doublyLinkedList.tail.prev).toEqual(null);
+    expect(doublyLinkedList.remove(removedItme).value).toEqual(removedItme);
+
+    const doublyLinkedList2 = new DoublyLinkedList();
+
+    doublyLinkedList2.append('1');
+    doublyLinkedList2.append(removedItme);
+    doublyLinkedList2.append('2');
+
+    expect(doublyLinkedList2.remove(removedItme).value).toEqual(removedItme);
+    expect(doublyLinkedList2.head.value).toEqual('1');
+    expect(doublyLinkedList2.head.next.value).toEqual('2');
+    expect(doublyLinkedList2.head.prev).toEqual(null);
+    expect(doublyLinkedList2.tail.value).toEqual('2');
+    expect(doublyLinkedList2.tail.next).toEqual(null);
+    expect(doublyLinkedList2.tail.prev.value).toEqual('1');
+
+    doublyLinkedList2.remove('1');
+    doublyLinkedList2.remove('2');
+
+    expect(doublyLinkedList.head).toEqual(null);
+    expect(doublyLinkedList.tail).toEqual(null);
+});

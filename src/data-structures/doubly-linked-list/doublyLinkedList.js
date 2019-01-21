@@ -73,7 +73,44 @@ class DoublyLinkedList {
      * @return DoublyLinkedList
      */
     remove(value) {
+        if (!this.head) {
+            return null;
+        }
 
+        let deleteNode = null;
+        let currentNode = this.head;
+
+        while (currentNode) {
+            if (currentNode.value === value) { // 比较当前结点值与欲删除值
+                deleteNode = currentNode;
+
+                // 对头节点边界处理
+                if (deleteNode === this.head) {
+                    this.head = deleteNode.next;
+
+                    // 将头节点的prev指向null
+                    if (this.head) {
+                        this.head.prev = null;
+                    }
+                    // 处理无尾节点情况
+                    if (deleteNode === this.tail) {
+                        this.tail = null;
+                    }
+                } else if (currentNode.value === this.tail) {
+                    // 对尾节点边界处理
+                    this.tail = currentNode.prev;
+                    this.next = null;
+                } else {
+                    // A<=>B<=>C,currentNode = B 现需删除B
+                    // A.next = C
+                    // C.prev = A
+                    currentNode.prev.next = currentNode.next;
+                    currentNode.next.prev = currentNode.prev;
+                }
+            }
+            currentNode = currentNode.next;
+        }
+        return deleteNode;
     }
 
     /**
