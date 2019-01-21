@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "jest --watch --no-cache",
+    "test": "jest --watch --verbose",
     "test:coverage": "jest --coverage --no-cache"
   },
   "author": "twindyorg@163.com",

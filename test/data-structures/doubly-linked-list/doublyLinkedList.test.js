@@ -7,7 +7,7 @@ test('01、创建一个空双向链表', ()=> {
     expect(doublyLinkedList.tail).toEqual(null);
 });
 
-test('02、双向链表尾部添加节点', ()=> {
+test('02、双向链表尾部添加节点:append()', ()=> {
     const doublyLinkedList = new DoublyLinkedList();
 
     doublyLinkedList.append('1');
@@ -32,7 +32,7 @@ test('02、双向链表尾部添加节点', ()=> {
     expect(doublyLinkedList.tail.prev.value).toBe('3');
 });
 
-test('03、双向链表头部添加节点', ()=> {
+test('03、双向链表头部添加节点:prepend()', ()=> {
     const doublyLinkedList = new DoublyLinkedList();
 
     doublyLinkedList.prepend('1');
@@ -65,7 +65,7 @@ test('03、双向链表头部添加节点', ()=> {
     expect(doublyLinkedList.tail.prev.value).toEqual('2');
 });
 
-test('04、移除节点（remove）', ()=> {
+test('04、移除节点:remove()', ()=> {
     const doublyLinkedList = new DoublyLinkedList();
 
     const removedItme = {
