@@ -3,9 +3,6 @@ dist: trusty
 language: node_js
 env:
     - CODECOV_TOKEN="416bd7ba-2df0-4733-811e-7f44f971185c"
-    - EMBER_VERSION=release
-    - EMBER_VERSION=beta
-    - EMBER_VERSION=canary
 node_js:
   - node
 install:
@@ -13,5 +10,4 @@ install:
   - npm install -g codecov
 script:
   - npm run ci
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
   - codecov
