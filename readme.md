@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/senola/algorithm.svg?branch=master)](https://travis-ci.com/senola/algorithm)
+
 javascript algorithm 
 
 - data-structures [数据结构]

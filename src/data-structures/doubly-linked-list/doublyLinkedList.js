@@ -117,25 +117,25 @@ class DoublyLinkedList {
      * 查找元素
      * @return DoublyLinkedList
      */
-    find(value) {
+    // find(value) {
 
-    }
+    // }
 
     /**
      * 删除头节点
      * @return DoublyLinkedList
      */
-    deleteHead() {
+    // deleteHead() {
 
-    }
+    // }
 
     /**
      * 删除尾节点
      * @return DoublyLinkedList
      */
-    deleteTail() {
+    // deleteTail() {
 
-    }
+    // }
 }
 
 module.exports = DoublyLinkedList;
