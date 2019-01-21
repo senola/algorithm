@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.com/senola/algorithm.svg?branch=master)](https://travis-ci.com/senola/algorithm)
+
+[![Build Status](https://travis-ci.com/senola/algorithm.svg?branch=dev)](https://travis-ci.com/senola/algorithm)
+[![codecov](https://codecov.io/gh/senola/algorithm/branch/dev/graph/badge.svg)](https://codecov.io/gh/senola/algorithm)
 
 javascript algorithm 
 
