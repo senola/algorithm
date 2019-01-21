@@ -52,7 +52,20 @@ class DoublyLinkedList {
      * @return DoublyLinkedList
      */
     prepend(value) {
+        // 创建一个next指向头节点的Node
+        const newNode = new DoublyLinkedListNode(value, this.head, null);
 
+        // 如果头节点存在，则将头节点的prev指向新节点
+        if (this.head) {
+            this.head.prev = newNode;
+        }
+        // 头节点指向新的的节点
+        this.head = newNode;
+
+        if (!this.tail) {
+            this.tail = newNode;
+        }
+        return this;
     }
 
     /**
