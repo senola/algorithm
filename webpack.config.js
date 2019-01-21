@@ -12,7 +12,10 @@ module.exports = {
         filename: ''
     },
     plugins: [
-        new UglifyJsPlugin()
+        new UglifyJsPlugin(),
+        new webpack.DefinePlugin({
+            VERSION: JSON.stringify(require('./package.json').version) // 提取package中的version
+        })
     ],
     module: {
         rules: [

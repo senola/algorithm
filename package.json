@@ -9,8 +9,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "jest --no-cache",
-    "test:coverage": "jest --coverage --no-cache"
+    "test": "jest --watch --verbose --colors --no-cache",
+    "test:coverage": "jest --coverage --no-cache",
+    "test:ci": "jest --coverage --no-cache  --coverage --ci",
+    "ci": "npm run lint && npm run test:ci"
   },
   "author": "twindyorg@163.com",
   "license": "MIT",
