@@ -9,8 +9,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "jest --watch --verbose --colors --no-cache",
-    "coveralls": "cat ./tests/coverage/lcov.info | coveralls",
+    "test": "jest --watch --verbose --colors --no-cache --forceExit",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "test:coverage": "jest --coverage --no-cache",
     "test:ci": "jest --coverage --no-cache  --coverage --ci",
     "ci": "npm run lint && npm run test:ci && npm run coveralls"

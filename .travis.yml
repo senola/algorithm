@@ -1,7 +1,9 @@
-sudo: required
+sudo: false
 dist: trusty
 language: node_js
 env:
+  global:
+    - NODE_ENV=travis 
     - CODECOV_TOKEN="416bd7ba-2df0-4733-811e-7f44f971185c"
 node_js:
   - node
@@ -10,4 +12,5 @@ install:
   - npm install -g codecov
 script:
   - npm run ci
+after_script:
   - codecov
