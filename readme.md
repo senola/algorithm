@@ -11,5 +11,5 @@ javascript algorithm
 
 单元测试：
 
-![image](https://user-images.githubusercontent.com/6022948/49872698-d770c500-fe54-11e8-900e-45875328f199.png)
+![image](https://user-images.githubusercontent.com/6022948/57191606-17e2f380-6f5a-11e9-9fd1-26fb294cbe27.png)
 
