@@ -36,6 +36,10 @@ test('03、创建一个包含多个节点的链表', ()=> {
 test('04、删除包含一个节点的链表的头节点:deleteHead()', ()=> {
     const linkedList = new SimpleLinkedList();
 
+    linkedList.deleteHead();
+    expect(linkedList.head).toEqual(null);
+    expect(linkedList.tail).toEqual(null);
+
     linkedList.append('1');
 
     const deletedNode = linkedList.deleteHead();
@@ -117,6 +121,8 @@ test('09、删除包含多个节点的链表的尾节点:deleteTail()', ()=> {
 
 test('10、查找某个节点信息:find()', ()=> {
     const linkedList = new SimpleLinkedList();
+
+    expect(linkedList.find('4')).toEqual(null);
 
     linkedList.append('1');
     linkedList.append('2');

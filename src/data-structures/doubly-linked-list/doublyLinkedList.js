@@ -81,11 +81,11 @@ class DoublyLinkedList {
         let currentNode = this.head;
 
         while (currentNode) {
-            if (currentNode.value === value) { // 比较当前结点值与欲删除值
+            if (currentNode.value === value) { // 比较当前结点值与预删除值
                 deleteNode = currentNode;
 
                 // 对头节点边界处理
-                if (deleteNode === this.head) {
+                if (currentNode === this.head) {
                     this.head = deleteNode.next;
 
                     // 将头节点的prev指向null
@@ -96,7 +96,7 @@ class DoublyLinkedList {
                     if (deleteNode === this.tail) {
                         this.tail = null;
                     }
-                } else if (currentNode.value === this.tail) {
+                } else if (currentNode === this.tail) {
                     // 对尾节点边界处理
                     this.tail = currentNode.prev;
                     this.next = null;
@@ -117,25 +117,81 @@ class DoublyLinkedList {
      * 查找元素
      * @return DoublyLinkedList
      */
-    // find(value) {
+    find(value) {
+        if (!this.head) return null;
 
-    // }
+        let currentNode = this.head;
+
+        // 从头开始遍历链表,找到对应的值则返回当前节点，忽略有重复值情况
+        while (currentNode) {
+            if (value && currentNode.value === value) {
+                return currentNode;
+            }
+            currentNode = currentNode.next;
+        }
+        return null;
+    }
 
     /**
      * 删除头节点
      * @return DoublyLinkedList
      */
-    // deleteHead() {
+    deleteHead() {
+        if (!this.head) return null;
 
-    // }
+        const deleteHead = this.head;
+
+        if (!deleteHead.next) { // 只有一个节点的情况
+            this.head = null;
+            this.tail = null;
+        } else {
+            this.head = this.head.next;
+            this.head.prev = null; // 注意要将头结点的prev指针指向null
+        }
+        return deleteHead;
+    }
 
     /**
      * 删除尾节点
      * @return DoublyLinkedList
      */
-    // deleteTail() {
+    deleteTail() {
+        if (!this.head) return null;
 
-    // }
+        const deletedTail = this.tail;
+
+        if (!this.head.next) { // 只有一个节点的情况
+            this.head = null;
+            this.tail = null;
+        } else {
+            this.tail = this.tail.prev;
+            this.tail.next = null; // 注意需要将尾结点的next指针指向null
+        }
+
+        return deletedTail;
+    }
+
+    /**
+     * 转换成数组
+     */
+    toArray() {
+        const nodes = [];
+
+        let currentNode = this.head;
+
+        while (currentNode) {
+            nodes.push(currentNode.value);
+            currentNode = currentNode.next;
+        }
+        return nodes;
+    }
+
+    /**
+     * toString
+     */
+    toString() {
+        return this.toArray().toString();
+    }
 }
 
 module.exports = DoublyLinkedList;
