@@ -8,7 +8,7 @@ module.exports = {
         "sourceType": "module",
         "ecmaVersion": 2017
     },
-    // 团队代码风格自定义
+    // 代码风格自定义
     rules: {
         // don't require .vue extension when importing
         // 'import/extensions': ['error', 'always', {
@@ -17,10 +17,6 @@ module.exports = {
         // }],
         // allow debugger during development
         'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-        /*
-         * Possible Errors
-         */
-
 
         // 0-off: 不启用, 1-warn： 警告, 2-error： 报错
 
