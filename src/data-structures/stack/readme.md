@@ -10,3 +10,12 @@
 栈主要包含`push`（添加元素到栈的顶端）和`pop`（移除栈最顶端元素），操作示意图如下：
 
 ![image](https://user-images.githubusercontent.com/6022948/57211882-7a98c580-7014-11e9-9488-4e6dd400b92b.png)
+
+
+栈包含的功能如下：
+
+- 是否为空栈（isEmpty）
+- 访问栈顶元素（peek）
+- 入栈操作（push）
+- 出栈操作 （pop）
+- toArray

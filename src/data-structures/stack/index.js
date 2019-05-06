@@ -28,7 +28,7 @@ class Stack {
     peek() {
         if (this.isEmpty()) return null;
 
-        return this.linkedList.head;
+        return this.linkedList.head.value;
     }
 
     /**
@@ -56,13 +56,6 @@ class Stack {
      */
     toArray() {
         return this.linkedList.toArray();
-    }
-
-    /**
-     * toString
-     */
-    toString() {
-        return this.linkedList.toString();
     }
 }
 

@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "test": "jest --watch --verbose --colors --no-cache --forceExit",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "test:ci": "jest --coverage --no-cache  --coverage --ci",
+    "test:ci": "jest --coverage --no-cache --ci",
     "ci": "npm run lint && npm run test:ci && npm run coveralls"
   },
   "author": "twindyorg@163.com",

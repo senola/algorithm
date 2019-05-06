@@ -7,6 +7,7 @@ javascript algorithm
 - data-structures [数据结构]
   - [x] simple-linked-list [简单的单向链表]
   - [x] doubly-linked-list [双向链表]
+  - [x] stack [栈] 
 
 
 
