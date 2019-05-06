@@ -1,4 +1,4 @@
-const SimpleLinkedList = require('../../../src/data-structures/simple-linked-list');
+import SimpleLinkedList from '../../../src/data-structures/simple-linked-list';
 
 test('01、创建一个空链表', ()=> {
     const linkedList = new SimpleLinkedList();
@@ -235,18 +235,6 @@ test('14、toArray()', ()=> {
     const _array = linkedList.toArray();
 
     expect(_array.length).toBe(2);
-    expect(_array).toContain('1');
-    expect(_array).toContain('2');
-});
-
-test('14、toString()', ()=> {
-    const linkedList = new SimpleLinkedList();
-
-    linkedList.append('1');
-    linkedList.append('2');
-    linkedList.append('3');
-
-    const _str = linkedList.toString();
-
-    expect(_str).toMatch('1,2,3');
+    expect(_array[0].value).toEqual('1');
+    expect(_array[1].value).toEqual('2');
 });

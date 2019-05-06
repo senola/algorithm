@@ -76,9 +76,9 @@ class DoublyLinkedList {
         if (!this.head) {
             return null;
         }
+        let currentNode = this.head;
 
         let deleteNode = null;
-        let currentNode = this.head;
 
         while (currentNode) {
             if (currentNode.value === value) { // 比较当前结点值与预删除值
@@ -180,18 +180,11 @@ class DoublyLinkedList {
         let currentNode = this.head;
 
         while (currentNode) {
-            nodes.push(currentNode.value);
+            nodes.push(currentNode);
             currentNode = currentNode.next;
         }
         return nodes;
     }
-
-    /**
-     * toString
-     */
-    toString() {
-        return this.toArray().toString();
-    }
 }
 
-module.exports = DoublyLinkedList;
+export default DoublyLinkedList;

@@ -177,18 +177,11 @@ class SimpleLinkedList {
         let currentNode = this.head;
 
         while (currentNode) {
-            nodes.push(currentNode.value);
+            nodes.push(currentNode);
             currentNode = currentNode.next;
         }
         return nodes;
     }
-
-    /**
-     * toString
-     */
-    toString() {
-        return this.toArray().toString();
-    }
 }
 
-module.exports = SimpleLinkedList;
+export default SimpleLinkedList;

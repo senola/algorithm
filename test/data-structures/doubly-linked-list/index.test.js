@@ -1,4 +1,4 @@
-const DoublyLinkedList = require('../../../src/data-structures/doubly-linked-list');
+import DoublyLinkedList from '../../../src/data-structures/doubly-linked-list';
 
 test('01、创建一个空双向链表', ()=> {
     const doublyLinkedList = new DoublyLinkedList();
@@ -230,18 +230,6 @@ test('08、toArray()', ()=> {
     const _array = doublyLinkedList.toArray();
 
     expect(_array.length).toBe(2);
-    expect(_array).toContain('1');
-    expect(_array).toContain('2');
-});
-
-test('09、toString()', ()=> {
-    const doublyLinkedList = new DoublyLinkedList();
-
-    doublyLinkedList.append('1');
-    doublyLinkedList.append('2');
-    doublyLinkedList.append('3');
-
-    const _str = doublyLinkedList.toString();
-
-    expect(_str).toMatch('1,2,3');
+    expect(_array[0].value).toContain('1');
+    expect(_array[1].value).toContain('2');
 });

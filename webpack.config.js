@@ -1,6 +1,5 @@
 const path = require('path');
 // const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -25,8 +24,8 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['babel-preset-env'],
-                        plugins: [require('babel-plugin-transform-runtime')]
+                        presets: ['@babel/preset-env'],
+                        plugins: [require('@babel/plugin-transform-runtime')]
                     }
                 }
             }
