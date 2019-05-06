@@ -8,6 +8,7 @@ javascript algorithm
   - [x] simple-linked-list [简单的单向链表]
   - [x] doubly-linked-list [双向链表]
   - [x] stack [栈] 
+  - [x] queue [队列] 
 
 
 
