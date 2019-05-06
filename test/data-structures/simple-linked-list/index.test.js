@@ -1,4 +1,4 @@
-const SimpleLinkedList = require('../../../src/data-structures/simple-linked-list/simpleLinkedList');
+const SimpleLinkedList = require('../../../src/data-structures/simple-linked-list');
 
 test('01、创建一个空链表', ()=> {
     const linkedList = new SimpleLinkedList();

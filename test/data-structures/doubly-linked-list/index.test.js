@@ -1,4 +1,4 @@
-const DoublyLinkedList = require('../../../src/data-structures/doubly-linked-list/doublyLinkedList');
+const DoublyLinkedList = require('../../../src/data-structures/doubly-linked-list');
 
 test('01、创建一个空双向链表', ()=> {
     const doublyLinkedList = new DoublyLinkedList();
