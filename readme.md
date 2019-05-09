@@ -9,6 +9,11 @@ javascript algorithm
   - [x] doubly-linked-list [双向链表]
   - [x] stack [栈] 
   - [x] queue [队列] 
+- algorithms [算法]
+  - [ ] sort [排序]
+    - [ ] insert-sort [插入排序]
+    - [ ] bubble-sort [冒泡排序]
+    - [ ] quick-sort [快速排序]
 
 
 
