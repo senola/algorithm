@@ -1,4 +1,5 @@
 /**
+ * 选择排序算法
  * @time 2019-05-29
  * @author twindyorg
  *
@@ -7,14 +8,14 @@
 class SelectionSort {
 
     /**
-     * 插入排序算法
+     * 选择排序算法
      * @param {Array} originalArray 要进行排序的数组
      */
     static sort(originalArray) {
         // 克隆一个新数组
         const array = [...originalArray];
 
-        for (let i = 0, _len = array.length; i < _len; i++) {
+        for (let i = 0, _len = array.length; i < _len - 1; i++) {
             let minIndex = i;
 
             for (let j = i + 1; j < _len; j++) {
