@@ -284,7 +284,7 @@ module.exports = {
         'object-curly-spacing': ['error', 'never'],
 
         // require or disallow padding within blocks
-        'padded-blocks': ['error', 'never'],
+        'padded-blocks': ['off', 'never'],
 
         // require quotes around object literal property names
         'quote-props': ['error', 'as-needed'],
