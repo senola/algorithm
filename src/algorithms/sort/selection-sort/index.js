@@ -4,7 +4,6 @@
  * @author twindyorg
  *
  */
-// eslint-disable-next-line
 class SelectionSort {
 
     /**
