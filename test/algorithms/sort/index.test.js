@@ -38,7 +38,7 @@ function sortCheck(originalArray) {
     // 选择排序
     result.SelectionSort = {};
     result.SelectionSort.beignTime = Date.now();
-    // SelectionSort.sort(originalArray);
+    SelectionSort.sort(originalArray);
     result.SelectionSort.endTime = Date.now();
 
     return result;
