@@ -3,7 +3,6 @@
  * @time 2019-05-28
  * @author twindyorg
  */
-// eslint-disable-next-line
 class BubbleSort {
 
     /**
