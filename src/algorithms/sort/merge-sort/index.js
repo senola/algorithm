@@ -1,10 +1,4 @@
 /**
- * 归并排序算法实现
- * @time 2019-05-29
- * @author twindyorg
- */
-
-/**
  * 将两边已排序的数组做最后的合并
  * @param {Array} sortedLeftArray 左半已排序的数组
  * @param {Array} sortedRightArray 右半已排序的数组
@@ -39,7 +33,11 @@ function merge(sortedLeftArray, sortedRightArray) {
     return sortedArray;
 }
 
-// eslint-disable-next-line
+/**
+ * 归并排序算法实现
+ * @time 2019-05-29
+ * @author twindyorg
+ */
 class MergeSort {
 
     /**
