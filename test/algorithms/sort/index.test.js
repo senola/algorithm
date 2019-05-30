@@ -50,7 +50,7 @@ function sortCheck(originalArray) {
 
 test('性能测试', ()=> {
     // 随机生成长度为1000，值在[0, 10000]之间的数组
-    const array = Array.from({length: 500}, ()=> {
+    const array = Array.from({length: 1000}, ()=> {
         return Utils.getRandomNum(0, 1050000);
     });
 
@@ -71,7 +71,7 @@ test('性能测试', ()=> {
     const QuickSort2 = result2.QuickSort.endTime - result2.QuickSort.beignTime;
 
     // eslint-disable-next-line
-    console.log(`针对长度为100的数组,使用各算法耗时统计如下：
+    console.log(`针对长度为1000的数组,使用各算法耗时统计如下：
 冒泡排序算法: 第一次：${BubbleSort1}ms 第二次：${BubbleSort2}ms 平均：${(BubbleSort1 + BubbleSort2) / 2}ms
 插入排序算法: 第一次：${InsertionSort1}ms 第二次：${InsertionSort2}ms 平均：${(InsertionSort1 + InsertionSort2) / 2}ms
 选择排序算法: 第一次：${SelectionSort1}ms 第二次：${SelectionSort2}ms 平均：${(SelectionSort1 + SelectionSort2) / 2}ms
