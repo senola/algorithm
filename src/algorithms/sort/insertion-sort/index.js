@@ -3,8 +3,6 @@
  * @time 2019-05-29
  * @author twindyorg
  */
-
-// eslint-disable-next-line
 class InsertionSort {
 
     /**
