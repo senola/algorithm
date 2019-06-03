@@ -11,13 +11,17 @@ javascript algorithm
   - [x] queue [队列] 
 - algorithms [算法]
   - [ ] sort [排序]
-    - [ ] insert-sort [插入排序]
-    - [ ] bubble-sort [冒泡排序]
-    - [ ] quick-sort [快速排序]
+    - [x] insert-sort [插入排序]
+    - [x] bubble-sort [冒泡排序]
+    - [x] selection-sort [选择排序]
+    - [x] merge-sort [归并排序]
+    - [x] quick-sort [快速排序]
+    - [x] counting-sort [计数排序]
+    - [x] radix-sort [基数数排序]
 
 
 
 单元测试：
 
-![image](https://user-images.githubusercontent.com/6022948/57191606-17e2f380-6f5a-11e9-9fd1-26fb294cbe27.png)
+![image](https://user-images.githubusercontent.com/6022948/58798175-83d97a00-8634-11e9-9997-02264efa9a27.png)
 
