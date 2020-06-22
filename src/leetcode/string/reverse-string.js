@@ -3,5 +3,7 @@
  * https://leetcode-cn.com/problems/reverse-words-in-a-string-iii
  */
 export default str=> {
-    return str.split(/\s/g).map(i => i.split('').reverse().join('')).join(' ');
+    return str.split(/\s/g).map(i=> {
+        return i.split('').reverse().join('');
+    }).join(' ');
 };
