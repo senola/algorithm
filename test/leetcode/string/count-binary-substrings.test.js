@@ -10,7 +10,7 @@ test('01、计数二进制', ()=> {
     expect(countBinarySubstrings3('00110')).toEqual(3);
 });
 
-test('01、计数二进制性能测试', ()=> {
+test('02、计数二进制性能测试', ()=> {
 
     // 随机生成长度为10000，值在[0, 1]之间的数组
     const binaryString = Array.from({length: 10000}, ()=> {
