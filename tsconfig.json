@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "dist",
+        "sourceMap": false,
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "allowJs": false,
+        "strict": false,
+        "noUnusedLocals": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "removeComments": false,
+        "jsx": "preserve",
+        "lib": ["es5", "dom"],
+        "rootDir": "."
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}
