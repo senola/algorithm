@@ -4,7 +4,8 @@ module.exports = {
         node: true
     },
     "extends": "eslint:recommended",
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
+    "plugins": ['@typescript-eslint'],
     "parserOptions": {
         "sourceType": "module",
         "ecmaVersion": 2017
