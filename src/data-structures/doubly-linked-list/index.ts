@@ -9,6 +9,9 @@
  * 定义双向链表的节点结构（链表由一组节点组成）
  */
 class DoublyLinkedListNode {
+    value: any;
+    next: any;
+    prev: any;
     constructor(value, next = null, prev = null) {
         this.value = value;
         this.next = next;
@@ -20,6 +23,9 @@ class DoublyLinkedListNode {
  * 双向链表实现
  */
 class DoublyLinkedList {
+    head: any;
+    tail: any;
+    next: any;
     constructor() {
         this.head = null;
         this.tail = null;

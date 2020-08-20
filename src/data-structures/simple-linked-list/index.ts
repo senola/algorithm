@@ -9,6 +9,8 @@
  * 定义节点结构（链表由一组节点组成）
  */
 class SimpleLinkedListNode {
+    value: any;
+    next: any;
     // 简单的链表节点只需要输出值和下一个节点的信息
     constructor(value, next = null) {
         this.value = value;
@@ -20,6 +22,8 @@ class SimpleLinkedListNode {
  * 简单的链表实现
  */
 class SimpleLinkedList {
+    head: any;
+    tail: any;
     // 链表的头节点和尾结点信息
     // 可通过每个节点的next属性找到下一个节点的信息
     constructor() {

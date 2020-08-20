@@ -17,7 +17,7 @@ test('02、计数二进制性能测试', ()=> {
         return Utils.getRandomNum(0, 1);
     }).join('');
 
-    const perf = {};
+    const perf: any = {};
 
     perf.cbs1 = {};
     perf.cbs2 = {};

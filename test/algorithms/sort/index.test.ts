@@ -9,7 +9,7 @@ import Utils from '../../../src/utils';
  * sortCheck
  */
 function sortCheck(originalArray) {
-    const result = {};
+    const result: any = {};
 
     // 快速排序
     result.QuickSort = {};

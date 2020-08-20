@@ -8,6 +8,7 @@
 import LinkedList from '../simple-linked-list';
 
 class Queue {
+    linkedList: LinkedList;
     constructor() {
         // 初始化一个空链表
         this.linkedList = new LinkedList();

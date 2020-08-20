@@ -3,7 +3,7 @@
         "baseUrl": ".",
         "outDir": "dist",
         "sourceMap": false,
-        "target": "esnext",
+        "target": "es6",
         "module": "esnext",
         "moduleResolution": "node",
         "allowJs": false,
@@ -14,7 +14,7 @@
         "esModuleInterop": true,
         "removeComments": false,
         "jsx": "preserve",
-        "lib": ["esnext", "dom"],
+        "lib": ["es6", "dom"],
         "rootDir": "."
     },
     "include": ["src/**/*"],
