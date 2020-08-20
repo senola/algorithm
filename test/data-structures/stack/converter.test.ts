@@ -17,7 +17,7 @@ test('02、十进制转八进制', ()=> {
     expect(converter(1000, 8)).toEqual('1750');
 });
 
-test('02、十进制转十六进制', ()=> {
+test('03、十进制转十六进制', ()=> {
     expect(converter(0, 16)).toEqual('0');
     expect(converter(1, 16)).toEqual('1');
     expect(converter(18, 16)).toEqual('12');
