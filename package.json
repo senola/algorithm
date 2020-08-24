@@ -8,6 +8,7 @@
   ],
   "main": "index.js",
   "scripts": {
+    "dev": "npm run test",
     "lint": "eslint .",
     "test": "jest --watch --verbose --colors --no-cache --forceExit",
     "coveralls": "cat ./coverage/lcov.info | coveralls",

@@ -4,7 +4,7 @@
 - 和栈一样，是一种操作受限的线性表数据结构，包含两个基本操作：**入队**（enqueue()）和**出队**（dequeue()）
 - 队列可以用数组实现，也可以用链表实现，用数组实现的队列叫做**顺序队列**，用链表实现的队列叫做**链式队列**
 
-![image](https://user-images.githubusercontent.com/6022948/57220549-521dc500-702e-11e9-8109-9b550beac2f6.png)
+![image](https://cdn.jsdelivr.net/gh/staticImages/img@v1/coding/algorithm/queue.png)
 
 #### 队列的类型
 
