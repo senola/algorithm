@@ -1,4 +1,4 @@
-import DoublyLinkedList from '../../../src/data-structures/doubly-linked-list';
+import DoublyLinkedList from '../../../src/data-structures/linked-list/doubly-linked-list';
 
 test('01、创建一个空双向链表', ()=> {
     const doublyLinkedList = new DoublyLinkedList();

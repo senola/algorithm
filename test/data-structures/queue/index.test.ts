@@ -35,17 +35,3 @@ test('03、出队操作：dequeue()', ()=> {
     expect(queue.dequeue()).toEqual('14');
     expect(queue.dequeue()).toEqual(null);
 });
-
-test('04、toArray()', ()=> {
-    const queue = new Queue();
-
-    queue.enqueue('1');
-    queue.enqueue('21');
-    queue.enqueue('14');
-
-    const _array = queue.toArray();
-
-    expect(_array.length).toBe(3);
-    expect(_array[0].value).toEqual('1');
-    expect(_array[1].value).toEqual('21');
-});

@@ -4,7 +4,7 @@
  * @author twindyorg
  *
  **/
-import LinkedList from '../simple-linked-list';
+import LinkedList from '../linked-list/linked-list';
 
 class Stack {
     linkedList: LinkedList;
@@ -63,13 +63,6 @@ class Stack {
      */
     get size() {
         return this.count;
-    }
-
-    /**
-     * 转换成数组
-     */
-    toArray() {
-        return this.linkedList.toArray();
     }
 }
 

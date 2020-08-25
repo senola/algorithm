@@ -9,3 +9,9 @@ test('01、Utils.getRandomNum 检测', ()=> {
     expect(Utils.getRandomNum(10, 50)).toBeLessThanOrEqual(50);
     expect(Utils.getRandomNum(10, 50)).toBeGreaterThanOrEqual(10);
 });
+
+test('02、Utils.defaultCompare 检测', ()=> {
+    expect(Utils.defaultCompare(1, 2)).toEqual(false);
+    expect(Utils.defaultCompare(1, 1)).toEqual(true);
+    expect(Utils.defaultCompare('1', '1')).toEqual(true);
+});

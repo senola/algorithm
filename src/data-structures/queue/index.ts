@@ -5,7 +5,7 @@
  *
  **/
 
-import LinkedList from '../simple-linked-list';
+import LinkedList from '../linked-list/linked-list';
 
 class Queue {
     linkedList: LinkedList;
@@ -19,7 +19,7 @@ class Queue {
      */
     enqueue(value) {
         // 在链表的尾部添加元素
-        this.linkedList.append(value);
+        this.linkedList.push(value);
     }
 
     /**
@@ -36,7 +36,7 @@ class Queue {
      * 判断栈是否为空队列
      * @return {boolean} true: 空队列， false: 非空队列
      */
-    isEmpty() {
+    isEmpty(): any {
         return !this.linkedList.head;
     }
 
@@ -44,17 +44,10 @@ class Queue {
      * 访问队列当前顶最前端的元素
      * @return {*}
      */
-    peek() {
+    peek(): any {
         if (this.isEmpty()) return null;
 
         return this.linkedList.head.value;
-    }
-
-    /**
-     * 转换成数组
-     */
-    toArray() {
-        return this.linkedList.toArray();
     }
 }
 

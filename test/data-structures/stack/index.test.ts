@@ -45,20 +45,3 @@ test('03、出栈操作：pop()', ()=> {
     stack.pop();
     expect(stack.peek()).toEqual(null);
 });
-
-test('04、toArray()', ()=> {
-    const stack = new Stack();
-
-    stack.push('1');
-    stack.push('2');
-    stack.push('3');
-    const a = {a: 1};
-
-    stack.push(a);
-
-    const _array = stack.toArray();
-
-    expect(_array.length).toBe(4);
-    expect(_array[0].value).toEqual(a);
-    expect(_array[1].value).toEqual('3');
-});

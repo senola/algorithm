@@ -15,6 +15,10 @@ class Utils {
                 return 1;
         }
     }
+    // 比较函数
+    static defaultCompare(a: any, b: any) {
+        return a === b;
+    }
 }
 
 export default Utils;
