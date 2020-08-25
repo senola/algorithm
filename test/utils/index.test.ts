@@ -1,6 +1,6 @@
 import Utils from '../../src/utils';
 
-test('01、Utils.getRandomNum 检测', ()=> {
+test('01、Utils.getRandomNum() 检测', ()=> {
     expect(Utils.getRandomNum()).toEqual(1);
     expect(Utils.getRandomNum(1)).toBeGreaterThanOrEqual(0);
     expect(Utils.getRandomNum(1)).toBeLessThanOrEqual(1);
@@ -10,8 +10,16 @@ test('01、Utils.getRandomNum 检测', ()=> {
     expect(Utils.getRandomNum(10, 50)).toBeGreaterThanOrEqual(10);
 });
 
-test('02、Utils.defaultCompare 检测', ()=> {
+test('02、Utils.defaultCompare() 检测', ()=> {
     expect(Utils.defaultCompare(1, 2)).toEqual(false);
     expect(Utils.defaultCompare(1, 1)).toEqual(true);
     expect(Utils.defaultCompare('1', '1')).toEqual(true);
 });
+
+test('02、Utils.defaultToString() 检测', ()=> {
+    expect(Utils.defaultToString('')).toEqual('');
+    expect(Utils.defaultToString(null)).toEqual('NULL');
+    expect(Utils.defaultToString(undefined)).toEqual('UNDEFINED');
+    expect(Utils.defaultToString(213123123)).toEqual('213123123');
+});
+
