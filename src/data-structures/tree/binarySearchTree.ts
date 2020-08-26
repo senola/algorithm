@@ -12,11 +12,11 @@ class BinarySearchTree {
         this.root = null; // 根节点
     }
 
-    insert(key: any) {
+    insert(key: any): boolean {
         if (this.root === null) { // 插入节点是否为第一个节点
             this.root = new TreeNode(key);
         } else {
-            if (!this.search(key)) {
+            if (!this.search(key)) { // 确保二叉树无重复数据
                 this.insertNode(this.root, key);
             } else {
                 return false;
