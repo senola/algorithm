@@ -118,7 +118,7 @@ class LinkedList {
         let current = this.head;
 
         for (let i = 0; i < this.count; i++) {
-            if (this.compareFn(value, current.value)) {
+            if (this.compareFn(value, current.value) === 0) {
                 return i;
             }
             current = current.next;

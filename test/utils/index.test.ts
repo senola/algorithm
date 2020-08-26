@@ -11,9 +11,10 @@ test('01、Utils.getRandomNum() 检测', ()=> {
 });
 
 test('02、Utils.defaultCompare() 检测', ()=> {
-    expect(Utils.defaultCompare(1, 2)).toEqual(false);
-    expect(Utils.defaultCompare(1, 1)).toEqual(true);
-    expect(Utils.defaultCompare('1', '1')).toEqual(true);
+    expect(Utils.defaultCompare(1, 2)).toEqual(-1);
+    expect(Utils.defaultCompare(1, 1)).toEqual(0);
+    expect(Utils.defaultCompare('1', '1')).toEqual(0);
+    expect(Utils.defaultCompare('2', '1')).toEqual(1);
 });
 
 test('02、Utils.defaultToString() 检测', ()=> {
