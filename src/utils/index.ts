@@ -17,7 +17,11 @@ class Utils {
     }
     // 比较函数
     static defaultCompare(a: any, b: any) {
-        return a === b;
+        if (a === b) {
+            return 0;
+        }
+
+        return a < b ? -1 : 1;
     }
     // 转为String
     static defaultToString(item: any) {
