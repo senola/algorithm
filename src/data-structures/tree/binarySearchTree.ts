@@ -28,15 +28,15 @@ class BinarySearchTree {
     insertNode(node: TreeNode, key: any) {
         if (this.compareFn(node.key, key) > 0) {
             if (node.left === null) { // 左节存储比父节点小的值
-                node.left = new TreeNode(key);
+                return node.left = new TreeNode(key);
             } else {
-                this.insertNode(node.left, key);
+                return this.insertNode(node.left, key);
             }
         } else { // 右节存储比父节点大的值
             if (node.right === null) {
-                node.right = new TreeNode(key);
+                return node.right = new TreeNode(key);
             } else {
-                this.insertNode(node.right, key);
+                return this.insertNode(node.right, key);
             }
         }
     }
@@ -64,7 +64,7 @@ class BinarySearchTree {
     inOrderTraverseNode(node: TreeNode, callBack: Function) {
         if (node !== null) { // 停止递归遍历条件
             this.inOrderTraverseNode(node.left, callBack);
-            callBack(node.key);
+            callBack(node.key); // 遍历节点值在中间
             this.inOrderTraverseNode(node.right, callBack);
         }
     }
@@ -75,7 +75,7 @@ class BinarySearchTree {
 
     preOrderTraverseNode(node: TreeNode, callBack: Function) {
         if (node !== null) {
-            callBack(node.key);
+            callBack(node.key); // 遍历节点值在前面
             this.preOrderTraverseNode(node.left, callBack);
             this.preOrderTraverseNode(node.right, callBack);
         }
@@ -90,7 +90,7 @@ class BinarySearchTree {
         if (node !== null) {
             this.postOrderTraverseNode(node.left, callBack);
             this.postOrderTraverseNode(node.right, callBack);
-            callBack(node.key);
+            callBack(node.key); // 遍历节点值在最后
         }
     }
     // 返回树中最小值
