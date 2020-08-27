@@ -19,8 +19,6 @@ const BalanceFactor = {
 class AVLTree extends BinarySearchTree {
     constructor(compareFn = utils.defaultCompare) {
         super(compareFn);
-        this.root = null;
-        this.compareFn = compareFn;
     }
 
     // 获取节点的高度
@@ -49,7 +47,7 @@ class AVLTree extends BinarySearchTree {
                 return BalanceFactor.BALANCED;
         }
     }
-    // LL 旋转
+    // LL 左左旋转
     rotationLL(node: TreeNode) {
         const tmp = node.left; // tmp 为新的根节点
 
@@ -57,7 +55,7 @@ class AVLTree extends BinarySearchTree {
         tmp.right = node; // 新的根节点的右子节点分配为旧的根节点
         return tmp;
     }
-    // RR 旋转
+    // RR 右右旋转
     rotationRR(node: TreeNode) {
         const tmp = node.right; // tmp 为新的根节点
 
@@ -65,12 +63,12 @@ class AVLTree extends BinarySearchTree {
         tmp.left = node; // 新的根节点的左子节点分配为旧的根节点
         return tmp;
     }
-    // LR旋转
+    // LR 先左左，再右右旋转
     rotationLR(node: TreeNode) {
         node.left = this.rotationRR(node.left);
         return this.rotationLL(node);
     }
-    // RL旋转
+    // RL 先右右，再左左旋转
     rotationRL(node: TreeNode) {
         node.right = this.rotationLL(node.right);
         return this.rotationRR(node);
@@ -95,7 +93,7 @@ class AVLTree extends BinarySearchTree {
         } else {
             return node; // 重复的键
         }
-        // 如果需要，将树进行平衡操作
+        // 将树进行平衡操作，获取当前node的平衡因子
         const balanceFactor = this.getBalanceFactor(node);
 
         if (balanceFactor === BalanceFactor.UNBALANCED_LEFT) {
