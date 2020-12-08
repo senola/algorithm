@@ -34,9 +34,9 @@
 
 #### 字符串
 
-- [计数二进制](https://leetcode-cn.com/problems/count-binary-substrings/)  [\[题解\]](https://leetcode-cn.com/problems/reverse-integer/)
-- [反转字符串中的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii)  [\[题解\]](https://leetcode-cn.com/problems/reverse-integer/)
-- [整数反转](https://leetcode-cn.com/problems/reverse-integer/) [\[题解\]](https://leetcode-cn.com/problems/reverse-integer/)
+- [计数二进制](https://leetcode-cn.com/problems/count-binary-substrings/)  \[[题解](https://leetcode-cn.com/problems/reverse-integer/)\]
+- [反转字符串中的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii)  \[[题解](https://leetcode-cn.com/problems/reverse-integer/)\]
+- [整数反转](https://leetcode-cn.com/problems/reverse-integer/) \[[题解](https://leetcode-cn.com/problems/reverse-integer/)\]
 
 #### 正则
 
