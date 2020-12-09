@@ -40,11 +40,11 @@
 
 #### 正则
 
-- [重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/)
+- [重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) \[[题解](./src/leetcode/regex/459-repeated-substring-pattern.ts\]
 
 #### 排序
 
-- [最大间距](https://leetcode-cn.com/problems/maximum-gap/)
+- [最大间距](https://leetcode-cn.com/problems/maximum-gap/) \[[题解](./src/leetcode/sort/164-maximum-gap.ts\]
 
 
 ### 单元测试：
