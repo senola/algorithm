@@ -31,6 +31,8 @@ const reverseInteger1 = (num: any)=> {
 
 /**
  * 解题思路二：通过模10取到最低位，然后又通过乘 10 将最低位迭代到最高位，完成翻转
+ * 时间复杂度：O(n)-- while 循环n次
+ * 空间复杂度：O(1)-- 只用到常数个变量
  * @param num {any}
  */
 const reverseInteger2 = (num: any)=> {
