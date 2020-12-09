@@ -1,4 +1,8 @@
-import {countBinarySubstrings1, countBinarySubstrings2, countBinarySubstrings3} from '../../../src/leetcode/string/count-binary-substrings';
+import {
+    countBinarySubstrings1,
+    countBinarySubstrings2,
+    countBinarySubstrings3
+} from '../../../src/leetcode/string/696-count-binary-substrings';
 import Utils from '../../../src/utils';
 
 test('01、计数二进制', ()=> {
