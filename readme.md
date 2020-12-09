@@ -27,16 +27,16 @@
 
 #### 数组
 
-- [电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
-- [格雷编码](https://leetcode-cn.com/problems/gray-code/)
-- [种花问题](https://leetcode-cn.com/problems/can-place-flowers/)
-- [卡牌分组](https://leetcode-cn.com/problems/x-of-a-kind-in-a-deck-of-cards/)
+- [电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) \[[题解](./src/leetcode/array/17-letter-combinations-phone-num.ts)\]
+- [格雷编码](https://leetcode-cn.com/problems/gray-code/) \[[题解](./src/leetcode/array/89-gray-code.ts)\]
+- [种花问题](https://leetcode-cn.com/problems/can-place-flowers/) \[[题解](./src/leetcode/array/605-can-place-flowers.ts)\]
+- [卡牌分组](https://leetcode-cn.com/problems/x-of-a-kind-in-a-deck-of-cards/) \[[题解](./src/leetcode/array/89-gray-code.ts)\]
 
 #### 字符串
 
-- [计数二进制](https://leetcode-cn.com/problems/count-binary-substrings/)  \[[题解](https://leetcode-cn.com/problems/reverse-integer/)\]
-- [反转字符串中的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii)  \[[题解](https://leetcode-cn.com/problems/reverse-integer/)\]
-- [整数反转](https://leetcode-cn.com/problems/reverse-integer/) \[[题解](https://leetcode-cn.com/problems/reverse-integer/)\]
+- [计数二进制](https://leetcode-cn.com/problems/count-binary-substrings/)  \[[题解](./src/leetcode/string/696-count-binary-substrings.ts)\]
+- [反转字符串中的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii) \[[题解](./src/leetcode/string/557-reverse-string.ts)\] 
+- [整数反转](https://leetcode-cn.com/problems/reverse-integer/) \[[题解](./src/leetcode/string/007-reverse-integer.ts)\]
 
 #### 正则
 
