@@ -38,7 +38,7 @@
 - [反转字符串中的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii) \[[题解](./src/leetcode/string/557-reverse-string.ts)\] 
 - [整数反转](https://leetcode-cn.com/problems/reverse-integer/) \[[题解](./src/leetcode/string/007-reverse-integer.ts)\]
 - [有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) \[[题解](./src/leetcode/string/242-valid-anagram.ts)\]
-
+- [字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/) \[[题解](./src/leetcode/string/008-string-to-integer-atoi.ts)\]
 #### 正则
 
 - [重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) \[[题解](./src/leetcode/regex/459-repeated-substring-pattern.ts\]
