@@ -23,7 +23,7 @@ const strStr1 = (haystack: string, needle: string)=> {
 
     let index = 0;
 
-    while (index <= hayLength - needleLength) {
+    while (index <= hayLength - needleLength) { // 注意 needle存在单个字符情况，index可能等于hayLength - needleLength
         if (haystack[index] === needle[0] && needle === haystack.substr(index, needleLength)) {
             return index;
         }
