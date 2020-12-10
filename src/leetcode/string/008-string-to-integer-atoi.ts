@@ -50,7 +50,8 @@ const atoi2 = (s: any)=> {
     let result = '';
 
     for (const i of _s) {
-        if (i === '+' || i === '-' || Number.isInteger(Number(i))) {
+        // @ts-ignore
+        if (i === '+' || i === '-' || !isNaN(i)) {
             result += i;
         } else {
             break;
