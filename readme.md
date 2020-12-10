@@ -41,10 +41,11 @@
 - [字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/) \[[题解](./src/leetcode/string/008-string-to-integer-atoi.ts)\]
 - [验证回文串](https://leetcode-cn.com/problems/valid-palindrome/) \[[题解](./src/leetcode/string/125-valid-palindrome.ts)\]
 - [实现strStr()](https://leetcode-cn.com/problems/implement-strstr/) \[[题解](./src/leetcode/string/028-implement-strstr.ts)\]
+- [最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/) \[[题解](./src/leetcode/string/028-implement-strstr.ts)\]
 
 #### 正则
 
-- [重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) \[[题解](./src/leetcode/regex/459-repeated-substring-pattern.ts)\]
+- [重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) \[[题解](./src/leetcode/regex/014-longest-common-prefix.ts)\]
 
 #### 排序
 
