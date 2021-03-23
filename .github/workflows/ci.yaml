@@ -24,7 +24,7 @@ jobs:
       
     # Runs the Super-Linter action
     - run: npm install
-    - run: npm run test
+    - run: npm run test:ci
 
     # Send Message
     - name: Send Message
