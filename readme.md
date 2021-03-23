@@ -43,6 +43,7 @@
 - [实现strStr()](https://leetcode-cn.com/problems/implement-strstr/) \[[题解](./src/leetcode/string/028-implement-strstr.ts)\]
 - [最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/) \[[题解](./src/leetcode/string/014-longest-common-prefix.ts)\]
 - [最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/) \[[题解](./src/leetcode/string/005-longest-palindromic-substring.ts)\] 
+- [有效的括号](https://leetcode-cn.com/problems/valid-parentheses/description/) \[[题解](./src/leetcode/string/020-valid-parentheses.ts)\] 
 
 #### 正则
 
