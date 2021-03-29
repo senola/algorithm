@@ -13,33 +13,33 @@ function sortCheck(originalArray) {
 
     // 快速排序
     result.QuickSort = {};
-    result.QuickSort.beignTime = Date.now();
+    result.QuickSort.beignTime = performance.now();
     QuickSort.sort(originalArray);
-    result.QuickSort.endTime = Date.now();
+    result.QuickSort.endTime = performance.now();
 
     // 冒泡排序
     result.BubbleSort = {};
-    result.BubbleSort.beignTime = Date.now();
+    result.BubbleSort.beignTime = performance.now();
     BubbleSort.sort(originalArray);
-    result.BubbleSort.endTime = Date.now();
+    result.BubbleSort.endTime = performance.now();
 
     // 插入排序
     result.InsertionSort = {};
-    result.InsertionSort.beignTime = Date.now();
+    result.InsertionSort.beignTime = performance.now();
     InsertionSort.sort(originalArray);
-    result.InsertionSort.endTime = Date.now();
+    result.InsertionSort.endTime = performance.now();
 
     // 归并排序
     result.MergeSort = {};
-    result.MergeSort.beignTime = Date.now();
+    result.MergeSort.beignTime = performance.now();
     MergeSort.sort(originalArray);
-    result.MergeSort.endTime = Date.now();
+    result.MergeSort.endTime = performance.now();
 
     // 选择排序
     result.SelectionSort = {};
-    result.SelectionSort.beignTime = Date.now();
+    result.SelectionSort.beignTime = performance.now();
     SelectionSort.sort(originalArray);
-    result.SelectionSort.endTime = Date.now();
+    result.SelectionSort.endTime = performance.now();
 
     return result;
 }
@@ -56,25 +56,25 @@ test('性能测试', ()=> {
 
     const result = sortCheck(array);
 
-    const BubbleSort1 = result.BubbleSort.endTime - result.BubbleSort.beignTime;
-    const InsertionSort1 = result.InsertionSort.endTime - result.InsertionSort.beignTime;
-    const SelectionSort1 = result.SelectionSort.endTime - result.SelectionSort.beignTime;
-    const MergeSort1 = result.MergeSort.endTime - result.MergeSort.beignTime;
-    const QuickSort1 = result.QuickSort.endTime - result.QuickSort.beignTime;
+    const BubbleSort1 = Number((result.BubbleSort.endTime - result.BubbleSort.beignTime).toFixed(2));
+    const InsertionSort1 = Number((result.InsertionSort.endTime - result.InsertionSort.beignTime).toFixed(2));
+    const SelectionSort1 = Number((result.SelectionSort.endTime - result.SelectionSort.beignTime).toFixed(2));
+    const MergeSort1 = Number((result.MergeSort.endTime - result.MergeSort.beignTime).toFixed(2));
+    const QuickSort1 = Number((result.QuickSort.endTime - result.QuickSort.beignTime).toFixed(2));
 
     const result2 = sortCheck(array);
 
-    const BubbleSort2 = result2.BubbleSort.endTime - result2.BubbleSort.beignTime;
-    const InsertionSort2 = result2.InsertionSort.endTime - result2.InsertionSort.beignTime;
-    const SelectionSort2 = result2.SelectionSort.endTime - result2.SelectionSort.beignTime;
-    const MergeSort2 = result2.MergeSort.endTime - result2.MergeSort.beignTime;
-    const QuickSort2 = result2.QuickSort.endTime - result2.QuickSort.beignTime;
+    const BubbleSort2 = Number((result2.BubbleSort.endTime - result2.BubbleSort.beignTime).toFixed(2));
+    const InsertionSort2 = Number((result2.InsertionSort.endTime - result2.InsertionSort.beignTime).toFixed(2));
+    const SelectionSort2 = Number((result2.SelectionSort.endTime - result2.SelectionSort.beignTime).toFixed(2));
+    const MergeSort2 = Number((result2.MergeSort.endTime - result2.MergeSort.beignTime).toFixed(2));
+    const QuickSort2 = Number((result2.QuickSort.endTime - result2.QuickSort.beignTime).toFixed(2));
 
     // eslint-disable-next-line
     console.log(`针对长度为1000的数组,使用各算法耗时统计如下：
-冒泡排序算法: 第一次：${BubbleSort1}ms 第二次：${BubbleSort2}ms 平均：${(BubbleSort1 + BubbleSort2) / 2}ms
-插入排序算法: 第一次：${InsertionSort1}ms 第二次：${InsertionSort2}ms 平均：${(InsertionSort1 + InsertionSort2) / 2}ms
-选择排序算法: 第一次：${SelectionSort1}ms 第二次：${SelectionSort2}ms 平均：${(SelectionSort1 + SelectionSort2) / 2}ms
-归并排序算法: 第一次：${MergeSort1}ms 第二次：${MergeSort2}ms 平均：${(MergeSort1 + MergeSort2) / 2}ms
-快速排序算法: 第一次：${QuickSort1}ms 第二次：${QuickSort2}ms 平均：${(QuickSort1 + QuickSort2) / 2}ms`);
+冒泡排序算法: 第一次：${BubbleSort1}ms 第二次：${BubbleSort2}ms 平均：${((BubbleSort1 + BubbleSort2) / 2).toFixed(2)}ms
+插入排序算法: 第一次：${InsertionSort1}ms 第二次：${InsertionSort2}ms 平均：${((InsertionSort1 + InsertionSort2) / 2).toFixed(2)}ms
+选择排序算法: 第一次：${SelectionSort1}ms 第二次：${SelectionSort2}ms 平均：${((SelectionSort1 + SelectionSort2) / 2).toFixed(2)}ms
+归并排序算法: 第一次：${MergeSort1}ms 第二次：${MergeSort2}ms 平均：${((MergeSort1 + MergeSort2) / 2).toFixed(2)}ms
+快速排序算法: 第一次：${QuickSort1}ms 第二次：${QuickSort2}ms 平均：${((QuickSort1 + QuickSort2) / 2).toFixed(2)}ms`);
 });

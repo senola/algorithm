@@ -8,6 +8,9 @@ test('01、Utils.getRandomNum() 检测', ()=> {
     expect(Utils.getRandomNum(5)).toBeLessThanOrEqual(5);
     expect(Utils.getRandomNum(10, 50)).toBeLessThanOrEqual(50);
     expect(Utils.getRandomNum(10, 50)).toBeGreaterThanOrEqual(10);
+
+    // @ts-ignore
+    expect(Utils.getRandomNum(10, 50, 33)).toBeGreaterThanOrEqual(1);
 });
 
 test('02、Utils.defaultCompare() 检测', ()=> {
